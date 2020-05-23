@@ -1,6 +1,9 @@
+"""Дополнительные подпрограммы, отсутствующие
+в установленных сторонних библиотеках.
+"""
 import numpy
 
-def getNote(freq: float, delay: numpy.ndarray, /) -> numpy.ndarray:
+def get_note(freq: float, delay: numpy.ndarray, /) -> numpy.ndarray:
     """Функция формирования нотной последовательности.
     Только позиционные аргументы.
     """
@@ -11,6 +14,5 @@ def awgn(_loc: float, _scale: float, arr: numpy.ndarray, /) -> numpy.ndarray:
     loc - центр нормального распределения,
     scale - ширина отклонения распределения.
     """
-
     noise = numpy.random.normal(_loc, _scale, arr.size)
     return arr + noise
