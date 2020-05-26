@@ -16,3 +16,13 @@ def awgn(_loc: float, _scale: float, arr: numpy.ndarray, /) -> numpy.ndarray:
     """
     noise = numpy.random.normal(_loc, _scale, arr.size)
     return arr + noise
+
+def quantiz(lbrace, rbrace, x, /):
+    """Квантование х по левой или правой границе на основе модуля меньшего расстояния.
+    Если расстояние одинаково до двух границ, то функция возвращает левую границу.
+    """
+    if numpy.abs(rbrace - x) < numpy.abs(lbrace - x):
+        res = rbrace
+    else:
+        res = lbrace
+    return res
