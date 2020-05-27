@@ -1,0 +1,14 @@
+************* Module extrafuncs
+extrafuncs.py:30:0: C0103: Function name "getComplexDomain" doesn't conform to snake_case naming style (invalid-name)
+extrafuncs.py:33:4: C0103: Variable name "a" doesn't conform to snake_case naming style (invalid-name)
+extrafuncs.py:34:4: C0103: Variable name "z" doesn't conform to snake_case naming style (invalid-name)
+extrafuncs.py:37:4: C0103: Variable name "Z" doesn't conform to snake_case naming style (invalid-name)
+extrafuncs.py:38:11: C0103: Variable name "n" doesn't conform to snake_case naming style (invalid-name)
+extrafuncs.py:42:0: C0103: Function name "wrapTo2Pi" doesn't conform to snake_case naming style (invalid-name)
+extrafuncs.py:42:0: C0103: Argument name "Lambdas" doesn't conform to snake_case naming style (invalid-name)
+extrafuncs.py:46:11: C0103: Variable name "n" doesn't conform to snake_case naming style (invalid-name)
+extrafuncs.py:47:8: C0103: Variable name "positiveInumpyut" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 6.79/10 (previous run: 6.79/10, +0.00)
+

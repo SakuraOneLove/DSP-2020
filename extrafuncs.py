@@ -26,3 +26,27 @@ def quantiz(lbrace, rbrace, x, /):
     else:
         res = lbrace
     return res
+
+def getComplexDomain(halfdim, scale) -> numpy.ndarray:
+    """Doing something...
+    """
+    a = numpy.arange(-halfdim, halfdim)
+    z = numpy.zeros(shape=(2*halfdim, 2*halfdim), dtype=complex)
+    for j in numpy.arange(0, 2*halfdim):
+        z[j,] = (a+(j-halfdim+2)*1j).astype(complex)
+    Z = numpy.zeros(shape=(2*halfdim, 1), dtype=complex)
+    for k, n in enumerate(z):
+        Z[k][0] = n[0]*scale
+    return Z
+
+def wrapTo2Pi(Lambdas):
+    """Doing something#2...
+    """
+    wrapped = Lambdas
+    for k, n in enumerate(Lambdas):
+        positiveInumpyut = (n > 0)
+        wrapped[k] = numpy.mod(n, 2*numpy.pi)
+        if n == 0 & positiveInumpyut:
+            wrapped[k] = 2*numpy.pi
+    return wrapped
+    
