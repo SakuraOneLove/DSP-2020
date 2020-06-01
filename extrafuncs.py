@@ -57,7 +57,7 @@ def bit_grid(min_num: int, max_num: int, /) -> int:
         grid_size = 2 ** (appr - 1)
     return appr
 
-def bincodes(nums: tuple, bitdepth=None) -> list:
+def dec2compl(nums: tuple, bitdepth=None) -> list:
     """Перевод чисел в дополнительный код.
     """
     compl_arr = []
